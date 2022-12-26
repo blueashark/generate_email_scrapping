@@ -1,0 +1,25 @@
+This is an object oriented program, hence please use all the 3 py files in one folder. Start with main.py.
+
+It will ask for user input number of records you want to scrape, topic and the location of chrome driver.
+Selenium is used to getch all the article links.
+Cloudscraper and Beautifulsoup is then used to read the information from the article links.
+ALl information is stored in csv file in the project folder with the selected topic name.
+
+Website URL for the institutes is also scraped from the article links.
+If website url is not found, then email cannot be found.
+If the website URL is available, it searches for the email format from https://www.email-format.com/
+Currently I am scraping the highest score, if you buy the API, it will be quicker.
+Based on the format that gets the highest score, the email format is decided.
+If no email format is found then by default the program takes firstname.lastname@domain.com
+All the information is stored in a excel file in the project folder with the selected topic name.
+
+Scraping speed for 100 articles:  Between 1.5 to 3 minutes, as there is a cookie acceptance step, that takes some time to appear.
+Email finding speed for 100 emails: Between 3 to 4 minutes.
+I am using without proxies or captcha handler, hence this is the maximum speed without getting blocked by cloudflare.
+You can use the https://2captcha.com/ or your proxy method for more speed. https://github.com/VeNoMouS/cloudscraper#3rd-party-captcha-solvers
+
+IMPORTANT: If the program stops for whatever reason, please remove the csv file and excel file from the folder,
+because when you rerun the program, those files will be made empty for re-start.
+
+I have tried to test it extensively so that there are no failures, but if there are any, then please correct it or let me know.
+Thanks & Regards.
